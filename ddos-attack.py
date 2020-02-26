@@ -16,4 +16,4 @@ while True:
      sock.sendto(bytes, (ip,80))
      sock.sendto(bytes, (ip,443))
      sent += 1
-     print "Sent %s packet to %s throught port:%s"%(sent,ip,80)
+     print "Sent %s packet to %s throught port:80 and 443"%(sent,ip)
